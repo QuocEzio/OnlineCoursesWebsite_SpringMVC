@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+ Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="..."></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
+        <put-attribute name="content" value="..."></put-attribute>
+    </definition>
+    <definition name="homeLayout" extends="baseLayout">
+        <put-attribute name="title" value="Home Page"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/home.jsp"></put-attribute>
+    </definition>
+    <definition name="listCoursesLayout" extends="baseLayout">
+        <put-attribute name="title" value="Courses List"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/listCourses.jsp"></put-attribute>
+    </definition>
+    <definition name="uploadCourseLayout" extends="baseLayout">
+        <put-attribute name="title" value="Courses Management"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/uploadCourse.jsp"></put-attribute>
+    </definition>
+    <definition name="loginLayout" extends="baseLayout">
+        <put-attribute name="title" value="Login Page"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp"></put-attribute>
+    </definition>
+    <definition name="registerLayout" extends="baseLayout">
+        <put-attribute name="title" value="Register Page"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/register.jsp"></put-attribute>
+    </definition>
+    <definition name="listLessonsLayout" extends="baseLayout">
+        <put-attribute name="title" value="Lessons List"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/listLessons.jsp"></put-attribute>
+    </definition>
+     <definition name="uploadLessonLayout" extends="baseLayout">
+        <put-attribute name="title" value="Lesson Management"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/uploadLesson.jsp"></put-attribute>
+    </definition>
+    <definition name="listAssignmentsLayout" extends="baseLayout">
+        <put-attribute name="title" value="Assignments List"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/listAssignments.jsp"></put-attribute>
+    </definition>
+    <definition name="uploadAssignmentLayout" extends="baseLayout">
+        <put-attribute name="title" value="Assignments Management"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/uploadAssignment.jsp"></put-attribute>
+    </definition>
+    <definition name="listUsersLayout" extends="baseLayout">
+        <put-attribute name="title" value="Users List"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/listUsers.jsp"></put-attribute>
+    </definition>
+    <definition name="uploadUserLayout" extends="baseLayout">
+        <put-attribute name="title" value="User Management"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/uploadUser.jsp"></put-attribute>
+    </definition>
+     <definition name="detailCourseLayout" extends="baseLayout">
+        <put-attribute name="title" value="Course Detail"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/detailCourse.jsp"></put-attribute>
+    </definition>
+    <definition name="detailCartLayout" extends="baseLayout">
+        <put-attribute name="title" value="Cart"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/detailCart.jsp"></put-attribute>
+    </definition>
+    <definition name="payingLayout" extends="baseLayout">
+        <put-attribute name="title" value="Paying"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/paying.jsp"></put-attribute>
+    </definition>
+    <definition name="ordersLayout" extends="baseLayout">
+        <put-attribute name="title" value="Orders"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/orders.jsp"></put-attribute>
+    </definition>
+     <definition name="submitAssignmentLayout" extends="baseLayout">
+        <put-attribute name="title" value="Submit Assignment"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/submitAssignment.jsp"></put-attribute>
+    </definition>
+    <definition name="listSubmissionsLayout" extends="baseLayout">
+        <put-attribute name="title" value="List Submissions"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/listSubmissions.jsp"></put-attribute>
+    </definition>
+    <definition name="feedbackLayout" extends="baseLayout">
+        <put-attribute name="title" value="Feedback Submissions"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/feedback.jsp"></put-attribute>
+    </definition>
+    <definition name="changePassLayout" extends="baseLayout">
+        <put-attribute name="title" value="Change Password"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/changePass.jsp"></put-attribute>
+    </definition>
+    <definition name="statisticsLayout" extends="baseLayout">
+        <put-attribute name="title" value="Statistics"></put-attribute>
+        <put-attribute name="content" value="/WEB-INF/pages/statistics.jsp"></put-attribute>
+    </definition>
+    
+</tiles-definitions>
